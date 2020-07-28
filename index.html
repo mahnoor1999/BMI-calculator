@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1> Calculate Your Body Mass Index</h1>
+        <!-- height -->
+
+        <label for="height">Enter Your Height </label>
+        <div class="height">
+            <div> <input type="number" placeholder="feet" name="height" id="feet"> <span id="ft-error"></span>
+            </div>
+            <div>
+                <input type="number" placeholder="Inches" name="height" id="inches"> <span id="inch-error"></span>
+            </div>
+        </div>
+        <!-- weight -->
+        <div class="weight">
+            <label for="weight">Enter Your Weight</label>
+            <div>
+                <input type="number" placeholder="Kilograms" name="weight" id="weight"> <span
+                    id="weight-error"></span>
+            </div>
+        </div>
+
+        <!-- submit button -->
+        <button onclick="check();">Calculate</button>
+        <!-- for results -->
+        <div class="show-output">
+            <span id="result" class="output"> </span>
+            <span id="r-statement"  class="output"></span>
+        </div>
+    </main>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+
+</html>

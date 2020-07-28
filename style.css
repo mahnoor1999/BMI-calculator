@@ -1,0 +1,101 @@
+html {
+    font-size: 16px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center; 
+}
+h1{
+ color: #222831 ;
+ font-size: 2.5rem;
+ font-family:  cursive;
+ text-align: center;
+}
+label{
+color: #4f8a8b;
+font-size: 1.5rem;
+font-weight: bold;
+margin-left: 5px;
+font-family: 'Dancing Script', cursive;
+}
+input{
+    padding:0.3em 0.7em ;
+    background-color: rgba(255,255,255,0.1);
+    margin: 0.4em 1.6em 0em 0px ;
+    border-radius: 1em;
+    border: solid #fbd46d 2px;
+    font-size: 1.3rem; 
+}
+.height div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.height{
+    display: flex;
+}
+.weight div{
+    display: flex;
+    flex-direction: column;
+   align-items:stretch ;
+    
+}
+::placeholder{
+    font-family: 'Dancing Script', cursive;
+padding-left: 2px;
+}
+input + span {
+    color: red;
+    font-weight: light;
+    letter-spacing: 1px;
+    font-size: 0.8rem; 
+   margin-top: 2px;
+}
+button{
+    padding: 1em 2em;
+    border: none;
+    border-radius: 1em;
+    background-color: #be5683;
+    margin: 2em 15em;
+    color: white;
+    font-size: 1rem;
+   
+}
+button:hover{
+    background-color: #eeeeee;
+    border: 2px solid #be5683 ;
+    color: #be5683;
+   
+}
+.show-output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.output{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: brown;
+}
+@media (max-width : 630px){
+    html{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    label{
+        margin-left: 7em;
+    }
+    .height{
+     flex-direction: column;
+    }   
+    .weight div, .weight span{
+       width: 20em;
+       margin: auto;
+        
+    }
+}
